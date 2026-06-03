@@ -5,7 +5,7 @@ import { GoogleGenAI } from "@google/genai";
 import dotenv from "dotenv";
 
 dotenv.config();
-
+const GEMINI_API_KEY = "AQ.Ab8RN6LoY1k5cnHVzomKtQRlc2EhtLDtRkW0e4F6resmr0K5bA";
 async function startServer() {
   const app = express();
   const PORT = 3000;
@@ -16,7 +16,7 @@ async function startServer() {
   app.post("/api/analyze-hand", async (req, res) => {
     try {
       const apiKey = process.env.GEMINI_API_KEY;
-      if (!apiKey || apiKey === "MY_GEMINI_API_KEY") {
+      if (!apiKey || apiKey === "AQ.Ab8RN6LoY1k5cnHVzomKtQRlc2EhtLDtRkW0e4F6resmr0K5bA") {
         return res.status(400).json({
           error: "API Key do Gemini não configurada. Por favor, adicione a chave 'GEMINI_API_KEY' nas configurações da aplicação (Secrets).",
         });
