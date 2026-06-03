@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Poker Assistant Suite",
+  "description": "Uma suíte completa de ferramentas de apoio para poker online, incluindo Solucionador GTO, Calculadora de Equidade, Simulador de Multitarefa, Rastreador de Sessões e Visualizador de HUD integrado.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
